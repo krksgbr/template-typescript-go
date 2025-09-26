@@ -1,9 +1,8 @@
 { pkgs, lib, self, ... }:
 
 let
-  # TODO: add your public ssh key here to be able to log into the deployed host (as user `me`).
   sshKeys = [
-    "ssh-rsa <YOUR_PUBLIC_SSH_KEY>"
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC2pY+vWgl2mQReP8teDuXfXmUI2EqT+phnvBkjJFdrAok+pZe7V6CHjxrhJZ1RMHZeadSyYUyfK4YdQvJh86irk1Ri5BTL3vBmnbCPS+T86181kL+xDctjk0H0ypFY3Mzn7HuM7DGUQFGe1bS9sAWsyl/niXs6eX69CtYpw6P7aocX5hih6o+hzi/KdJgtGg4dHBWyo+d6BaqBXr6WizHHGnzkwEE173o+v+BZoOnFiPtyPdFQki2uYNLuHEman/vFxSuTJXiZgl+BD4RR9dlTjnBkGWxB6vrhSQgVf4SCOAaWoX18XK90pKBRf1eQS/nXkENo586yAsjWw3BjOA6foJitYV9ZkGOiwaD4W8SSy2tlHTBR0zx6nKd4KpF+8Ie92V+5rMsAvjxiTVM8kB1eK1yPxZasSlKpQoWs4mYFkwEo+/Droeu8b225fa4WLuUbFt81bL1QZJ1COILrSLEYFMEYm2jm7foP3Nk353XGhDi6bma2fJPZNaym91TrnoeJJgPMRRKs6ZHIJh8KxQNzLosck4Jy+Kly8t+FkadIhbd1RLibg0L20eh/h68NkIwL4j6li7DM+r48D5rk+/Z7DssG8cLvkiIt2zZ/d8q8+bF9mCaT2aMG67tyY3OSdSDQVH1qCa7ElEMS82ETLXtkwjACcMtbzawrOYuqNYGTZQ== krks.gbr@gmail.com"
   ];
   backendPort = "3000";
 in
